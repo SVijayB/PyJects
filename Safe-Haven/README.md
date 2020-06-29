@@ -1,7 +1,7 @@
 # Safe-Haven
 <p align="center">
     <img src="https://i.ibb.co/rdbx4xZ/Logo.png" alt="Logo" border="0">
-    <br>Application that helps you hide your secret files and folders
+    <br>Helps you hide your secret files and folders
 </p>
 
 ---
@@ -21,7 +21,7 @@ Run the `Safe-Haven.py` file present in the src folder.
 
 Now, copy the address of the folder you created earlier and paste it in the application.
 
-Next, the application asks where you would like to create your secure folder. Give it the address of the folder you want to save it to. Eg: `C:\Users\Username\Desktop`.
+Next, the application asks where you want to create your secure folder. Give it the address of the folder you want to save it to. Eg: `C:\Users\Username\Desktop`.
 
 Now, when it asks for a password, provide a password that is atleast 3 characters in length.<br>
 **Note** : Password has to be an integer.
