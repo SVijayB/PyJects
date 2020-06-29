@@ -1,6 +1,9 @@
 # PyJects
 
-A Collection of all my Python projects.
+<p align="center">
+    <img src="https://i.ibb.co/2Yt92hj/Logo.png" alt="Logo" border="0">
+    <br>A Collection of all my Python projects.
+</p>
 
 ## Table of Contents
 
