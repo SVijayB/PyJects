@@ -43,7 +43,7 @@ Once you have the source code downloaded and extracted. You can launch the appli
 
 Make sure you go through the `README.md` file present in the application's folder for complete understanding of the application's functionality and uses.
 
-Applications currently present in PyJects : 
+### Applications currently present in PyJects : 
 
 1. [Chat-Room-101](https://github.com/SVijayB/PyJects/tree/master/Chat-Room-101) : A Simple GUI based Chat Room Application.
 
@@ -56,6 +56,8 @@ Applications currently present in PyJects :
 5. [Typing-Speed-Test](https://github.com/SVijayB/PyJects/tree/master/Typing-Speed-Test) : A GUI based application that calculates typing speed.
 
 6. [YouTube-Extractor](https://github.com/SVijayB/PyJects/tree/master/YouTube-Extractor) : GUI based YouTube Video/Audio Extractor.
+
+7. [Safe-Haven](https://github.com/SVijayB/PyJects/tree/master/Safe-Haven) : An application built to help you hide your secret files and folders
 
 ## Contributing 
 

@@ -1,3 +1,4 @@
+from Modules.Colours import *
 import os
 import shutil
 import sys
@@ -8,8 +9,8 @@ if __name__ == "__main__":
     logo = open("../assets/logo.txt","r")
     output = "".join(logo.readlines())
     print(output)
-    print("\n"+"-"*20)
-    print("SAFE HAVEN")
+    green("\n"+"-"*20)
+    cyan("SAFE HAVEN")
     time.sleep(1)
     secret = input("\nEnter the address of the folder you want to hide \n> ")
     location = input("\nWhere would you like us to create your secure folder \n> ")
@@ -17,15 +18,17 @@ if __name__ == "__main__":
         password = int(input("\nEnter the password (Only numbers)\n> "))
     except:
         print("ERROR : ENTER ONLY NUMBERS")
-        input("Press enter to exit...")
+        grey("Press enter to exit...")
+        input()
         sys.exit(0)
 
     location = os.path.join(location,"Safe-Haven")
     try:
         os.mkdir(location)
     except:
-        print("ERROR : SAFE-HEAVEN ALREADY EXISTS...\nPICK A DIFFERENT FOLDER TO SAVE TO.")
-        input("Press enter to exit...")
+        red("ERROR : SAFE-HEAVEN ALREADY EXISTS...\nPICK A DIFFERENT FOLDER TO SAVE TO.")
+        grey("Press enter to exit...")
+        input()
         sys.exit(0)
 
     for index_1 in str(password):
@@ -44,13 +47,16 @@ if __name__ == "__main__":
                 
         location = location + "/" + index_1
 
-    print("\nFolders created successfully!\nFiles are being moved...")
+    green("\nFolders created successfully!")
+    print("Files are being moved...")
     try:
         shutil.move(secret,location)
     except:
-        print("ERROR UNABLE TO MOVE FILES")
-        input("Press enter to exit...")
+        red("ERROR UNABLE TO MOVE FILES")
+        green("Press enter to exit...")
+        input()
         sys.exit(0)
 
-    print("Completed!")
-    input("Press enter to exit...")
+    green("\nCompleted!")
+    grey("Press enter to exit...")
+    input()
