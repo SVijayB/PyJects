@@ -7,6 +7,6 @@ if __name__ == "__main__":
     data = open("../assets/version.txt" , "r").read()
     print("YouTube Extractor | " + data)
     window.title("YouTube Extractor | " + data)
-    window.iconbitmap("../assets/Icon.ico")
+    window.iconbitmap("../assets/images/Icon.ico")
     app = SelectionWindow(window)
     window.mainloop()

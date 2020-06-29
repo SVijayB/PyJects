@@ -9,7 +9,7 @@ def testwindow(wordslist):
     window = Tk()
     data = open("../assets/version.txt" , "r").read()
     window.title("Typing-Speed-Test | " + data)
-    window.iconbitmap("../assets/Icon.ico")
+    window.iconbitmap("../assets/images/Icon.ico")
     window.config(bg = "black")
     window.state("zoomed")
 

@@ -49,7 +49,7 @@ class SelectionWindow():
         self.choiceVar.set(1)
 
         for text,mode in downloadChoices:
-            self.type = Radiobutton(self.root, text=text, font=("Northwest old", 15), 
+            self.type = Radiobutton(self.root, text=text, font=("Northwest", 15), 
             fg = "#FF6347",bg = "black",variable=self.choiceVar, value = mode)
             self.type.grid()
         

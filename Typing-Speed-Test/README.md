@@ -14,6 +14,8 @@ Most typing tests are online and the ones that are downloadable(offline) are usu
 
 ## Usage
 
+Typing-Speed-Test uses custom fonts. Most windows computers have them preinstalled. However, if you don't, just open the `Fonts` folder present in assets and launch the `Agency-FB.ttf` and the `Algerian Regular.ttf` files and press install. 
+
 Run `Typing-Speed-Test.py` file present in the `src` folder.
 
 Once you launch the `Typing-Speed-Test.py` file, just select one of the three modes.

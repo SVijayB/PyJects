@@ -16,6 +16,8 @@ And hence YouTube-Extractor was made. You can launch it any time and download an
 
 ## Usage
 
+Typing-Speed-Test uses custom fonts. Most windows computers have them preinstalled. However, if you don't have them already, just open the `Fonts` folder present in assets and launch all the files present and hit on install.
+
 Before running the YouTube-Extractor, make sure you have pytube3 installed. To do this, type the following code in your terminal.
 <pre>
 pip install pytube3
