@@ -4,6 +4,17 @@ import socket
 from threading import Thread
 from time import sleep
 
+def enter(self):
+    global message_sent
+    message = my_message.get()
+    my_message.set("")
+    s.send(bytes(message, "utf8"))
+    message_sent = True
+
+    if message == "#quit":
+        s.close()
+        window.quit()
+
 message_sent = False
 
 def receive():
@@ -68,6 +79,7 @@ text_field.pack()
 
 send_button = Button(window,text = "Send", bg="white", command = send)
 send_button.pack()
+window.bind('<Return>',enter)
 
 window.protocol("WM_DELETE_WINDOW",closing)
 
