@@ -5,6 +5,19 @@
     <br>A Collection of all my Python projects.
 </p>
 
+---
+
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/SVijayB/PyJects.svg)](https://github.com/SVijayB/PyJects/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/SVijayB/PyJects.svg)](https://github.com/SVijayB/PyJects/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/SVijayB/PyJects.svg)](https://github.com/SVijayB/PyJects/graphs/contributors)
+
+[![GitHub license](https://img.shields.io/github/license/SVijayB/PyJects.svg)](https://github.com/SVijayB/PyJects/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/SVijayB/PyJects.svg)](https://github.com/SVijayB/PyJects/releases)
+[![GitHub repo size](https://img.shields.io/github/repo-size/svijayb/PyJects)](https://github.com/SVijayB/PyJects)
+
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SVijayB/PyJects/blob/master/.github/CODE_OF_CONDUCT.md)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/SVijayB/PyJects/blob/master/.github/CONTRIBUTING.md)
+
 ## Table of Contents
 
 - [Motivation](#Motivation)
