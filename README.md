@@ -12,8 +12,8 @@ A Collection of all my Python projects.
 
 ## Motivation
 
-I have worked on various Python projects and hence decided to cluster them together into a repository for ease of access. <br>
-Each application has a sepcific functionality. To read more about each of then, just open the folder and go through the **README.md** file
+I have worked on various Python projects and hence decided to cluster them together into a repository for ease of access and to be able to track my progress. <br>
+Each application has a specific functionality and a motivation behind why I made it. To read more about each of them, just open the folder and go through the **README.md** file
 
 ## Installation
 
@@ -39,6 +39,20 @@ Fonts are added to the application's assets folder.
 Once you have the source code downloaded and extracted. You can launch the applications by just double tapping on them, if you have the python launcher. Else, open up your terminal and cd to the `src` folder of the application you are trying to launch and type `python filename.py`, where filename is the name of the application.
 
 Make sure you go through the `README.md` file present in the application's folder for complete understanding of the application's functionality and uses.
+
+Applications currently present in PyJects : 
+
+1. [Chat-Room-101](https://github.com/SVijayB/PyJects/tree/master/Chat-Room-101) : A Simple GUI based Chat Room Application.
+
+2. [Custom-notepad](https://github.com/SVijayB/PyJects/tree/master/Custom-notepad) : A customized version of window's notepad with additional features.
+
+3. [Spam-Botz](https://github.com/SVijayB/PyJects/tree/master/Spam-Botz) : A simple and easy to use Spam Bot.
+
+4. [Steam_WebScraper](https://github.com/SVijayB/PyJects/tree/master/Steam_WebScraper) : An application built to monitor CS:GO prices on the Steam market.
+
+5. [Typing-Speed-Test](https://github.com/SVijayB/PyJects/tree/master/Typing-Speed-Test) : A GUI based application that calculates typing speed.
+
+6. [YouTube-Extractor](https://github.com/SVijayB/PyJects/tree/master/YouTube-Extractor) : GUI based YouTube Video/Audio Extractor.
 
 ## Contributing 
 
