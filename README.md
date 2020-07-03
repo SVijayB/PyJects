@@ -58,21 +58,21 @@ Make sure you go through the `README.md` file present in the application's folde
 
 ### Applications currently present in PyJects : 
 
-1. [Chat-Room-101](https://github.com/SVijayB/PyJects/tree/master/Chat-Room-101) : A Simple GUI based Chat Room Application.
+1. [Chat Room 101](https://github.com/SVijayB/PyJects/tree/master/Chat%20Room%20101) : A Simple GUI based Chat Room Application.
 
-2. [Custom-notepad](https://github.com/SVijayB/PyJects/tree/master/Custom-notepad) : A customized version of window's notepad with additional features.
+2. [Custom notepad](https://github.com/SVijayB/PyJects/tree/master/Custom%20notepad) : A customized version of window's notepad with additional features.
 
-3. [Spam-Botz](https://github.com/SVijayB/PyJects/tree/master/Spam-Botz) : A simple and easy to use Spam Bot.
+3. [Spam Botz](https://github.com/SVijayB/PyJects/tree/master/Spam%20Botz) : A simple and easy to use Spam Bot.
 
-4. [Steam_WebScraper](https://github.com/SVijayB/PyJects/tree/master/Steam_WebScraper) : An application built to monitor CS:GO prices on the Steam market.
+4. [Steam WebScraper](https://github.com/SVijayB/PyJects/tree/master/Steam%20WebScraper) : An application built to monitor CS:GO prices on the Steam market.
 
-5. [Typing-Speed-Test](https://github.com/SVijayB/PyJects/tree/master/Typing-Speed-Test) : A GUI based application that calculates typing speed.
+5. [Typing Speed Test](https://github.com/SVijayB/PyJects/tree/master/Typing%20Speed%20Test) : A GUI based application that calculates typing speed.
 
-6. [YouTube-Extractor](https://github.com/SVijayB/PyJects/tree/master/YouTube-Extractor) : GUI based YouTube Video/Audio Extractor.
+6. [YouTube Extractor](https://github.com/SVijayB/PyJects/tree/master/YouTube%20Extractor) : GUI based YouTube Video/Audio Extractor.
 
-7. [Safe-Haven](https://github.com/SVijayB/PyJects/tree/master/Safe-Haven) : An application built to help you hide your secret files and folders
+7. [Safe Haven](https://github.com/SVijayB/PyJects/tree/master/Safe%20Haven) : An application built to help you hide your secret files and folders
 
-8. [Simple Calculator](https://github.com/SVijayB/PyJects/tree/master/Simple-Calculator) : A simple calculator built using python's tkinter module.
+8. [Simple Calculator](https://github.com/SVijayB/PyJects/tree/master/Simple%20Calculator) : A simple calculator built using python's tkinter module.
 
 ## Contributing 
 
