@@ -72,6 +72,8 @@ Make sure you go through the `README.md` file present in the application's folde
 
 7. [Safe-Haven](https://github.com/SVijayB/PyJects/tree/master/Safe-Haven) : An application built to help you hide your secret files and folders
 
+8. [Simple Calculator](https://github.com/SVijayB/PyJects/tree/master/Simple-Calculator) : A simple calculator built using python's tkinter module.
+
 ## Contributing 
 
 To contribute to PyJects, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/PyJects/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests. 
