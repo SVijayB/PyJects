@@ -3,7 +3,7 @@ from getpass import getpass
 import os
 from Modules.Functions import *
 
-conn = sqlite3.connect('Password Manager\src\Database.db')
+conn = sqlite3.connect('Database.db')
 cursor = conn.cursor()
 
 if __name__ == "__main__":
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         print("""What would you like to do?
         1) Retrieve an account
         2) Retrieve all account details
-        3) Store account details
+        3) Add account details
         4) Update Password
         5) Delete an account
         6) Exit""")
@@ -29,10 +29,11 @@ if __name__ == "__main__":
         print("-" * 15)
         if (choice == 1):
             account = input("What is the name of the account? \n> ")
+            account = account.capitalize()
             flag = check_details(account)
             if flag:
                 username, password = get_password(account)
-                print(account.capitalize() + " Details : ")
+                print("\n" + account.capitalize() + " Details : ")
                 print("Username : ", username)
                 print("Password : ", password)
 
@@ -43,16 +44,18 @@ if __name__ == "__main__":
             account = input("Enter the account you are saving details for (Eg : Gmail) \n> ")
             cursor.execute("SELECT ACCOUNT from DETAILS where ACCOUNT = ?", (account,))
             data = cursor.fetchall()
+            account = account.capitalize()
             if (len(data)==0):
                 username = input("Enter username \n> ")
                 password = getpass("Enter password \n> ")
                 add_password(account, username, password)
-                print(account.capitalize() + " password stored\n")
+                print("\n" + account + " details have been successfully stored\n")
             else:
                 print("Account details for {} already exists.".format(account))
 
         elif (choice == 4):
             account = input("What is the name of the account you want to update details for? \n> ")
+            account = account.capitalize()
             flag = check_details(account)
             if flag:
                 password = getpass("Enter new password :\n> ")
@@ -62,6 +65,7 @@ if __name__ == "__main__":
 
         elif (choice == 5):
             account = input("What is the name of the account you want to delete? \n> ")
+            account = account.capitalize()
             flag = check_details(account)
             if flag:
                 delete_account(account)

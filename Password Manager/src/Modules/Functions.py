@@ -30,7 +30,7 @@ def get_all():
     cursor.execute("SELECT * from DETAILS")
     data = cursor.fetchall()
     if len(data) == 0:
-        print('No Data Present')
+        print("No Data Present\n")
     else:
         for row in data:
             print("Account : ", row[0])
