@@ -43,7 +43,6 @@ def check_details(account):
     cursor.execute("SELECT ACCOUNT from DETAILS where ACCOUNT = ?", (account,))
     data = cursor.fetchall()
     if len(data) == 0:
-        red("\nThere are no details for %s" % account + "\n")
         return False
     else:
         return True

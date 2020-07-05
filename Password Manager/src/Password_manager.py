@@ -40,13 +40,18 @@ if __name__ == "__main__":
             cursor.execute("SELECT ACCOUNT from DETAILS where ACCOUNT = ?", (account,))
             data = cursor.fetchall()
             account = account.capitalize()
-            if (len(data)==0):
+            flag = check_details(account)
+            if flag:
+                red("\nAccount details for {} already exists.\n".format(account))
+                temp = input("Would you like to update the password?(Y/n) \n> ").lower()
+                if(temp == "yes" or temp == "y"):
+                    password = getpass("Enter new password :\n> ")
+                    update_password(account, password)
+            else:
                 username = input("Enter username \n> ")
                 password = getpass("Enter password \n> ")
                 add_password(account, username, password)
                 green("\n" + account + " details has been successfully stored\n")
-            else:
-                print("Account details for {} already exists.".format(account))
 
         elif (choice == 2):
             account = input("What is the name of the account? \n> ")
@@ -69,7 +74,7 @@ if __name__ == "__main__":
                 password = getpass("Enter new password :\n> ")
                 update_password(account, password)
             else:
-                pass
+                red("\nThere are no details for %s" % account + "\n")
 
         elif (choice == 5):
             account = input("What is the name of the account you want to delete? \n> ")
@@ -78,7 +83,7 @@ if __name__ == "__main__":
             if flag:
                 delete_account(account)
             else:
-                pass
+                red("\nThere are no details for %s" % account + "\n")
 
         elif (choice == 6):
             destroy()
