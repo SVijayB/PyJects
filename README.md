@@ -74,6 +74,8 @@ Make sure you go through the `README.md` file present in the application's folde
 
 8. [Simple Calculator](https://github.com/SVijayB/PyJects/tree/master/Simple%20Calculator) : A simple calculator built using python's tkinter module.
 
+9. [Password Manager](https://github.com/SVijayB/PyJects/tree/master/Password%20Manager) : An application built to keep your passwords safe and collected.
+
 ## Contributing 
 
 To contribute to PyJects, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/PyJects/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests. 
