@@ -2,6 +2,7 @@ import sqlite3
 from getpass import getpass
 import os
 from Modules.Functions import *
+from Modules.Colours import *
 
 conn = sqlite3.connect('../assets/Database.db')
 cursor = conn.cursor()
@@ -12,7 +13,6 @@ if __name__ == "__main__":
             (ACCOUNT TEXT PRIMARY KEY NOT NULL, 
             USERNAME TEXT NOT NULL,
             PASSWORD TEXT NOT NULL)''')
-        print("Your locker has been created. \nWhat would you like to do?")
     except:
         pass
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print(output)
     
     while True:
-        print("-" * 15)
+        cyan("-" * 15)
         print("""What would you like to do?
         1) Add an account
         2) Retrieve an account
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         7) Clear Screen
         8) Exit""")
         choice = int(input("> "))
-        print("-" * 15)
+        cyan("-" * 15)
 
         if(choice==1):
             account = input("Enter the account you are saving details for (Eg : Gmail) \n> ")
@@ -44,7 +44,7 @@ if __name__ == "__main__":
                 username = input("Enter username \n> ")
                 password = getpass("Enter password \n> ")
                 add_password(account, username, password)
-                print("\n" + account + " details have been successfully stored\n")
+                green("\n" + account + " details has been successfully stored\n")
             else:
                 print("Account details for {} already exists.".format(account))
 
@@ -54,9 +54,9 @@ if __name__ == "__main__":
             flag = check_details(account)
             if flag:
                 username, password = get_password(account)
-                print("\n" + account.capitalize() + " Details : ")
-                print("Username : ", username)
-                print("Password : ", password)
+                green("\n" + account.capitalize() + " Details : ")
+                print("Username :", username)
+                print("Password :", password)
         
         elif (choice == 3):
             get_all()
@@ -69,7 +69,7 @@ if __name__ == "__main__":
                 password = getpass("Enter new password :\n> ")
                 update_password(account, password)
             else:
-                print("Account does not exist")
+                pass
 
         elif (choice == 5):
             account = input("What is the name of the account you want to delete? \n> ")
@@ -78,7 +78,7 @@ if __name__ == "__main__":
             if flag:
                 delete_account(account)
             else:
-                print("Account does not exist")
+                pass
 
         elif (choice == 6):
             destroy()
@@ -87,10 +87,11 @@ if __name__ == "__main__":
             os.system('cls')
 
         elif(choice == 8):
-            print("\nThanks for using Password_manager.")
+            green("\n-----x Thanks for using Password_manager x-----")
+            grey("Press any key to exit...")
+            input()
             conn.close()
-            input("Press any key to exit...")
             break
 
         else:
-            print("Invalid choice")
+            red("\nERROR : Invalid choice\n")

@@ -1,4 +1,5 @@
 from Password_manager import * 
+from Modules.Colours import *
 
 def get_password(account):
     command = 'SELECT * from DETAILS WHERE ACCOUNT = "' + account + '"'
@@ -17,20 +18,20 @@ def update_password(account, password):
     command = 'UPDATE DETAILS set PASSWORD = "' + password + '" where ACCOUNT = "' + account + '"'
     conn.execute(command)
     conn.commit()
-    print("\n" + account + " password has been updated successfully.\n")
+    green("\n" + account + " password has been updated successfully.\n")
 
 def delete_account(account):
     command = 'DELETE from DETAILS where ACCOUNT = "' + account + '"'
     conn.execute(command)
     conn.commit()
-    print(account + " details has been deleted from the database successfully.")
+    green("\n"+account + " details have been deleted from the database successfully.\n")
 
 def get_all():
     print()
     cursor.execute("SELECT * from DETAILS")
     data = cursor.fetchall()
     if len(data) == 0:
-        print("No Data Present\n")
+        red("No Data Present\n")
     else:
         for row in data:
             print("Account : ", row[0])
@@ -42,7 +43,7 @@ def check_details(account):
     cursor.execute("SELECT ACCOUNT from DETAILS where ACCOUNT = ?", (account,))
     data = cursor.fetchall()
     if len(data) == 0:
-        print("\nThere are no details for %s" % account + "\n")
+        red("\nThere are no details for %s" % account + "\n")
         return False
     else:
         return True
