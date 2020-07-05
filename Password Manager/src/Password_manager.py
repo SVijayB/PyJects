@@ -14,18 +14,19 @@ if __name__ == "__main__":
             PASSWORD TEXT NOT NULL)''')
         print("Your locker has been created. \nWhat would you like to do?")
     except:
-        print("What would you like to do?")
+        pass
     
     while True:
         print("-" * 15)
-        print("1) Retrieve an account")
-        print("2) Retrieve all account details")
-        print("3) Store account details")
-        print("4) Update Password")
-        print("5) Delete an account")
-        print("6) Exit")
+        print("""What would you like to do?
+        1) Retrieve an account
+        2) Retrieve all account details
+        3) Store account details
+        4) Update Password
+        5) Delete an account
+        6) Exit""")
         choice = int(input("> "))
-
+        print("-" * 15)
         if (choice == 1):
             account = input("What is the name of the account? \n> ")
             flag = check_details(account)
@@ -45,11 +46,8 @@ if __name__ == "__main__":
             if (len(data)==0):
                 username = input("Enter username \n> ")
                 password = getpass("Enter password \n> ")
-                if username == '' or password == '':
-                    print("Your username or password is empty.")
-                else:
-                    add_password(account, username, password)
-                    print("\n" + account.capitalize() + " password stored\n")
+                add_password(account, username, password)
+                print(account.capitalize() + " password stored\n")
             else:
                 print("Account details for {} already exists.".format(account))
 

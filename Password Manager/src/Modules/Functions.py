@@ -26,6 +26,7 @@ def delete_account(account):
     print(account + " details has been deleted from the database successfully.")
 
 def get_all():
+    print()
     cursor.execute("SELECT * from DETAILS")
     data = cursor.fetchall()
     if len(data) == 0:
@@ -41,7 +42,7 @@ def check_details(account):
     cursor.execute("SELECT ACCOUNT from DETAILS where ACCOUNT = ?", (account,))
     data = cursor.fetchall()
     if len(data) == 0:
-        print('There are no details for %s' % account)
+        print("\nThere are no details for %s" % account + "\n")
         return False
     else:
         return True
