@@ -17,7 +17,7 @@ def update_password(account, password):
     command = 'UPDATE DETAILS set PASSWORD = "' + password + '" where ACCOUNT = "' + account + '"'
     conn.execute(command)
     conn.commit()
-    print(account + " password has been updated successfully.")
+    print("\n" + account + " password has been updated successfully.\n")
 
 def delete_account(account):
     command = 'DELETE from DETAILS where ACCOUNT = "' + account + '"'
@@ -46,3 +46,8 @@ def check_details(account):
         return False
     else:
         return True
+
+def destroy():
+    cursor.execute('DELETE from DETAILS;',)
+    print("\nDelete",cursor.rowcount,"records\n")
+    conn.commit()
