@@ -17,7 +17,7 @@ With this application, you can rest at peace knowing that your files are safely 
 
 Firstly, Create a folder with all the files you want to hide. Once done,
 
-Run the `Safe-Haven.py` file present in the src folder.
+Run the `Safe-Haven.py` file present in the `src` folder.
 
 Now, copy the address of the folder you created earlier and paste it in the application.
 
