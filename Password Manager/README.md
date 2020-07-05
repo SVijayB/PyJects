@@ -9,7 +9,7 @@
 
 ## Motivation
 
-As the number of accounts created increases, it has become harder to collect and save all the passwords safely in one location. And hence I built this python application to create a database that keeps account of all your account usernames and passwords.
+As the number of accounts created increases, it has become harder to collect and save all the passwords safely in one location. And hence I built this python application to create a database that keeps track of all your account usernames and passwords.
 
 **Note** : Password manager only stores your data. It does not secure them.
 
