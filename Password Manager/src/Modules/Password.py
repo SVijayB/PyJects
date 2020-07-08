@@ -1,18 +1,22 @@
 from Modules.Colours import *
 from cryptography.fernet import Fernet
+import sys
 
 def password_function():
 
-    file = open('../temp/key.txt','rb')
+    file = open('../temp/key.temp','rb')
     key = file.read()
     file.close()
+    fernet = Fernet(key)
 
     try:
-        file = open('../temp/password.txt', 'r')
-        password = file.read()
+        with open("../temp/password.temp", 'rb') as f:
+            password = f.read()
+        decrypted = fernet.decrypt(password)
+        decrypted = decrypted.decode()
         while(True):
             entered_password = input("Enter your password \n> ")
-            if(password == entered_password):
+            if(decrypted == entered_password):
                 green("Logged in successfully")
                 grey("Press any key to continue...")
                 input()
@@ -26,11 +30,12 @@ def password_function():
         red("DO NOT FORGET THIS PASSWORD. YOU CANNOT CHANGE IT LATER.")
         
         password = input("Enter your password \n> ")
-        fernet = Fernet(key)
+        password = password.encode()
         encrypted = fernet.encrypt(password)
 
-        file = open('../temp/password.txt', 'w')
-        file.write(encrypted)
+        with open("../temp/password.temp", 'wb') as f:
+            f.write(encrypted)
+
         green("Your password has been saved successfully")
         cyan("Relaunch the application to continue.")
         grey("Press enter to exit...")
