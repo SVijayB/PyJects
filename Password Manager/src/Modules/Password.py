@@ -14,6 +14,8 @@ def password_function():
             password = f.read()
         decrypted = fernet.decrypt(password)
         decrypted = decrypted.decode()
+        green("PASSWORD MANAGER")
+        cyan("-" * 25)
         while(True):
             entered_password = input("Enter your password \n> ")
             if(decrypted == entered_password):

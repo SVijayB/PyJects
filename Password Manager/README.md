@@ -19,7 +19,11 @@ As the number of accounts created increases, it has become harder to collect and
     <img src="https://i.ibb.co/0yRHbTP/SS.png" alt="SS" border="0">
 </p>
 
-Run the `Password_manager.p` file present in the `src` folder.
+**Prerequisites** : Python 3 and Cryptography module.
+
+Before running the application, you need to install the [cryptography](https://pypi.org/project/cryptography/) module. To do so, launch your terminal and type `pip install cryptography`. Once completed, you are ready to use the application.
+
+Run the `Password_manager.py` file present in the `src` folder.
 
 You can do that by just double clicking on the file if you have the python launcher installed. Else, `cd/` to the `src` folder and type `python Password_manager.py`.
 
