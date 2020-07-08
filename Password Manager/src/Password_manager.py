@@ -6,8 +6,13 @@ from Modules.Functions import *
 from Modules.Colours import *
 from Modules.Password import *
 
+conn = sqlite3.connect('../assets/Database.db')
+cursor = conn.cursor()
+
 if __name__ == "__main__":
+
     os.system('cls')
+    password_function()
     try:
         conn.execute('''CREATE TABLE DETAILS 
             (ACCOUNT TEXT PRIMARY KEY NOT NULL, 
@@ -15,11 +20,6 @@ if __name__ == "__main__":
             PASSWORD TEXT NOT NULL)''')
     except:
         pass
-
-    password_function()
-
-    conn = sqlite3.connect('../assets/Database.db')
-    cursor = conn.cursor()
 
     os.system('cls')
     logo = open("../assets/logo.txt","r")
@@ -67,6 +67,8 @@ if __name__ == "__main__":
                 green("\n" + account.capitalize() + " Details : ")
                 print("Username :", username)
                 print("Password :", password)
+            else:
+                red("\nThere are no details for %s" % account + "\n")
         
         elif (choice == 3):
             get_all()
