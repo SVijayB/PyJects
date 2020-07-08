@@ -1,6 +1,7 @@
 import sqlite3
 from getpass import getpass
 import os
+import sys
 from Modules.Functions import *
 from Modules.Colours import *
 
@@ -15,6 +16,30 @@ if __name__ == "__main__":
             PASSWORD TEXT NOT NULL)''')
     except:
         pass
+
+    try:
+        file = open('../temp/password.txt', 'r')
+        password = file.read()
+        while(True):
+            entered_password = input("Enter your password \n> ")
+            if(password == entered_password):
+                green("Logged in successfully")
+                grey("Press any key to continue...")
+                input()
+                break
+            else:
+                red("Incorrect password")
+    except:
+        print("Since, this is the first time you are using Password_manager, Create a password")
+        cyan("NOTE : DO NOT FORGET THIS PASSWORD. YOU CANNOT CHANGE IT LATER")
+        password = input("Enter your password \n> ")
+        file = open('../temp/password.txt', 'w')
+        file.write(password)
+        green("Your password has been saved successfully")
+        cyan("Relaunch the application to continue....")
+        grey("Press enter to exit...")
+        input()
+        sys.exit(0)
 
     os.system('cls')
     logo = open("../assets/logo.txt","r")
@@ -93,7 +118,7 @@ if __name__ == "__main__":
 
         elif(choice == 8):
             green("\n-----x Thanks for using Password_manager x-----")
-            grey("Press any key to exit...")
+            grey("Press enter to exit...")
             input()
             conn.close()
             break
