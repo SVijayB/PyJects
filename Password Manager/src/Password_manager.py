@@ -5,10 +5,8 @@ import sys
 from Modules.Functions import *
 from Modules.Colours import *
 
-conn = sqlite3.connect('../assets/Database.db')
-cursor = conn.cursor()
-
 if __name__ == "__main__":
+    os.system('cls')
     try:
         conn.execute('''CREATE TABLE DETAILS 
             (ACCOUNT TEXT PRIMARY KEY NOT NULL, 
@@ -30,16 +28,21 @@ if __name__ == "__main__":
             else:
                 red("Incorrect password")
     except:
-        print("Since, this is the first time you are using Password_manager, Create a password")
-        cyan("NOTE : DO NOT FORGET THIS PASSWORD. YOU CANNOT CHANGE IT LATER")
+        green("PASSWORD MANAGER")
+        cyan("-" * 25)
+        print("Since, this is the first time you are using Password_manager, Create a password.")
+        red("DO NOT FORGET THIS PASSWORD. YOU CANNOT CHANGE IT LATER.")
         password = input("Enter your password \n> ")
         file = open('../temp/password.txt', 'w')
         file.write(password)
         green("Your password has been saved successfully")
-        cyan("Relaunch the application to continue....")
+        cyan("Relaunch the application to continue.")
         grey("Press enter to exit...")
         input()
         sys.exit(0)
+
+    conn = sqlite3.connect('../assets/Database.db')
+    cursor = conn.cursor()
 
     os.system('cls')
     logo = open("../assets/logo.txt","r")
