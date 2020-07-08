@@ -4,6 +4,7 @@ import os
 import sys
 from Modules.Functions import *
 from Modules.Colours import *
+from Modules.Password import *
 
 if __name__ == "__main__":
     os.system('cls')
