@@ -1,7 +1,7 @@
 # Password-Manager
 
 <p align="center">
-    <img src="https://i.ibb.co/YL9QyJf/Logo.png" alt="Logo" border="0">
+    <img src="assets/images/Logo.PNG" alt="Logo" border="0">
     <br>A simple application built to keep your passwords safe and collected.
 </p>
 
@@ -16,7 +16,7 @@ As the number of accounts created increases, it has become harder to collect and
 ## Usage
 
 <p align="center">
-    <img src="https://i.ibb.co/0yRHbTP/SS.png" alt="SS" border="0">
+    <img src="assets/images/SS.PNG" alt="SS" border="0">
 </p>
 
 **Prerequisites** : Python 3 and Cryptography module.

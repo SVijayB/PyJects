@@ -1,6 +1,6 @@
 # Steam_WebScraper
 <p align="center">
-    <a href="https://github.com/SVijayB/Steam_WebScraper"><img src="https://i.ibb.co/TYzy6P3/Logo.png" alt="Logo" border="0"></a>
+    <a href="https://github.com/SVijayB/Steam_WebScraper"><img src="assets/images/Logo.PNG" alt="Logo" border="0"></a>
     <br>A simple App to monitor prices on the Steam market
 </p>
 
@@ -17,7 +17,7 @@ It helps in obtaining an item at a lower price than normal. i.e., It notifies th
 ## Usage
 
 <p align="center">
-    <img src="https://i.ibb.co/b1Ds5gv/Main-SS.png" alt="Logo" border="0">
+    <img src="assets/images/Main SS.PNG" alt="SS" border="0">
 </p>
 
 Run `Update.py` file present in the `src` folder.<br>

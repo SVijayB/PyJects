@@ -1,7 +1,7 @@
 # Custom-notepad
 
 <p align="center">
-    <img src="https://i.ibb.co/1ZChTLF/Logo.png" alt="Logo" border="0">
+    <img src="assets/images/Logo.PNG" alt="Logo" border="0">
     <br>A Customised version of window's notepad with additional features.
 </p>
 
@@ -9,7 +9,7 @@
 
 ## Motivation
 <p align="center">
-    <img src="https://i.ibb.co/BsZyNmH/Normal-Mode.png" alt="Logo" border="0">
+    <img src="assets/images/Normal Mode.PNG" alt="Logo" border="0">
 </p>
 
 The primary motivation for building a custom notepad was mainly due to the lack of features on the default one.<br>
@@ -46,7 +46,7 @@ Custom-notepad offers a variety of personalization features for your notepad.
 - You can also change the background colour to your own desired colour.
 - The main key feature of the Custom-notepad is that it allows you to turn on **Dark mode**(Alt + D). To toggle Dark mode on and off, just click on the dark mode option under the personalize menu. 
 <p align="center">
-    <img src="https://i.ibb.co/dD89JDR/Dark-Mode.png" alt="Logo" border="0">
+    <img src="assets/images//Dark Mode.PNG" alt="Logo" border="0">
     <br>Notepad with dark mode enabled
 </p>
 

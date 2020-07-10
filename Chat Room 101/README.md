@@ -1,6 +1,6 @@
 # Chat-Room-101
 <p align="center">
-    <img src="https://i.ibb.co/JHjgVtZ/Logo.png" alt="Logo" border="0">
+    <img src="assets/Logo.png" alt="Logo" border="0">
     <br>A Simple GUI based Chat Room Application.
 </p>
 
@@ -16,7 +16,7 @@ Hence, messages are sent and recieved securely.
 ## Usage
 
 <p align="center">
-    <a href="https://github.com/SVijayB/Chat-Room-101"><img src="https://i.ibb.co/3TxfKt3/SS.png" alt="Logo" border="0"></a>
+    <a href="https://github.com/SVijayB/Chat-Room-101"><img src="assets/SS.PNG" alt="Logo" border="0"></a>
 </p>
 
 ### Server Side :

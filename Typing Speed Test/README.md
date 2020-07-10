@@ -1,6 +1,6 @@
 # Typing-Speed-Test
 <p align="center">
-    <img src="https://i.ibb.co/9qTqmvy/Logo.png" alt="Logo" border="0">
+    <img src="assets/images/Logo.PNG" alt="Logo" border="0">
     <br>A GUI based application that calculates your typing speed
 </p>
 

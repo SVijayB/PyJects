@@ -1,7 +1,7 @@
 # YouTube Extractor
 
 <p align="center">
-    <img src="https://i.ibb.co/bPM50BQ/Logo.jpg" alt="Logo" border="0">
+    <img src="assets/images/Logo.JPG" alt="Logo" border="0">
     <br>A Simple and Easy to use GUI based YouTube Video/Audio Extractor.
 </p>
 

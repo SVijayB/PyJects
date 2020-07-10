@@ -1,6 +1,6 @@
 # Spam-Botz
 <p align="center">
-    <img src="https://i.ibb.co/LtzC9DM/Logo.png" alt="Logo" border="0">
+    <img src="assets/images/Logo.PNG" alt="Logo" border="0">
     <br>A simple and easy to use Spam Bot
 </p>
 
@@ -24,7 +24,7 @@ This application allows you to spam in variations, like :
 ## Usage
 
 <p align="center">
-    <img src="https://i.ibb.co/DDxC40D/SS.png" alt="Logo" border="0">
+    <img src="assets/images/SS.PNG" alt="Logo" border="0">
 </p>
 
 Run `Spam_botz.py` file present in the `src` folder.

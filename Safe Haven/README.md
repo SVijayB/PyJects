@@ -1,6 +1,6 @@
 # Safe-Haven
 <p align="center">
-    <img src="https://i.ibb.co/rdbx4xZ/Logo.png" alt="Logo" border="0">
+    <img src="assets/Logo.PNG" alt="Logo" border="0">
     <br>Helps you hide your secret files and folders
 </p>
 
