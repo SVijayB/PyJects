@@ -76,6 +76,8 @@ Make sure you go through the `README.md` file present in the application's folde
 
 9. [Password Manager](https://github.com/SVijayB/PyJects/tree/master/Password%20Manager) : An application built to keep your passwords safe and collected.
 
+10. [File Sorter](https://github.com/SVijayB/PyJects/tree/master/File%20Sorter) : Sorts files into dedicated folders based on file type.
+
 ## Contributing 
 
 To contribute to PyJects, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/PyJects/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests. 
