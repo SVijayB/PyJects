@@ -56,4 +56,23 @@ Custom-notepad offers a variety of personalization features for your notepad.
 
 - There are additional keyboard shortcuts as well. Just click on the menu and you can see keyboard shortcuts available for each of the functions.
 
+Technology Stack used:
+
+* Python : Python is an interpreted, high-level and general-purpose     programming language.
+ Link: https://www.python.org/
+
+*Tkinter: Tkinter is a Python binding to the Tk GUI toolkit.
+Link: https://docs.python.org/3/library/tkinter.html
+
+*webbrowser: Provides a high-level interface to allow displaying Web-based documents to users.
+Link: https://docs.python.org/2/library/webbrowser.html
+
+*textwrap: Provides some convenience functions, as well as TextWrapper, the class that does all the work. 
+Link: https://docs.python.org/3/library/textwrap.html
+
+*datetime: Supplies classes for manipulating dates and times.
+Link: https://docs.python.org/3/library/datetime.html
+
+
+
 If you have any other queries regarding the product, click on the `Send Feedback` option under the help menu and create an Issue. We will get back to you as soon as possible. 
